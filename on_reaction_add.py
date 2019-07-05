@@ -13,7 +13,7 @@ async def on_reaction_add(reaction, user):
     msgobj = reaction.message
     emoji = reaction.emoji
 
-    server = msgobj.server
+    guild = msgobj.guild
     author = msgobj.author
     channel = msgobj.channel
     content = msgobj.content
@@ -21,6 +21,6 @@ async def on_reaction_add(reaction, user):
     # Commands
     if emoji == '':
         # now = "now" in aux
-        await main.client.send_message(channel, embed=ui_embed.vote_ui())
+        await channel.send(embed=ui_embed.vote_ui())
     if emoji == '':
         pass

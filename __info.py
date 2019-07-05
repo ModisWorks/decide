@@ -15,7 +15,7 @@ COMMANDS = {
     #     }
     # }
 }
-DATA_SERVER = {
+DATA_GUILD = {
     # "active_votes": {}
 }
 DATA_GLOBAL = {}
